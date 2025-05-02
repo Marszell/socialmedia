@@ -1,6 +1,7 @@
 import {ReactNode} from "react";
 import styles from '../ui/dashboard/dashboard.module.css'
 import Navbar from "../component/navbar/navbar";
+import LeftSide from "../component/leftside/leftside";
 
 export default function Layout({ children }: { children: ReactNode }) {
     return(
@@ -12,7 +13,7 @@ export default function Layout({ children }: { children: ReactNode }) {
 
             {/*leftside*/}
             <div>
-
+                <LeftSide />
             </div>
 
             {/*main content*/}
