@@ -3,9 +3,11 @@ import {
     MdHouse,
     MdPeopleAlt,
     MdOutlineNotifications,
+    MdSearch,
 } from "react-icons/md";
+import MenuLink from "./menuLink/menuLink";
 
-const menuItem = [
+const menuItems = [
     {
         title:"Main Menu",
         path:"/",
@@ -29,24 +31,30 @@ export default function Navbar(){
             {/*leftside*/}
             <div className={styles.leftside}>
                 {/*logo*/}
-                <div>
+                <div className={styles.logo}>
                     <div>FTree</div>
                 </div>
 
                 {/*Searchbar*/}
-                <div>
-
+                <div className={styles.search}>
+                    <MdSearch />
+                    <p>Search...</p>
                 </div>
             </div>
 
             {/*menuItems*/}
-            <div>
-
+            <div className={styles.menu}>
+                {menuItems.map((item) =>(
+                    <MenuLink item={item} key={item.title}/>
+                    // <li key={cat.title}>
+                    //     {cat.list.}
+                    // </li>
+                ))}
             </div>
 
             {/*profile*/}
-            <div>
-
+            <div className={styles.user}>
+                <img className={styles.image} alt="profile"/>
             </div>
         </div>
     )
