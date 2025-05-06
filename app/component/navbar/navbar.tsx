@@ -6,6 +6,7 @@ import {
     MdSearch,
 } from "react-icons/md";
 import MenuLink from "./menuLink/menuLink";
+import Image from "next/image";
 
 const menuItems = [
     {
@@ -54,7 +55,8 @@ export default function Navbar(){
 
             {/*profile*/}
             <div className={styles.user}>
-                <img className={styles.image} alt="profile"/>
+                <Image className={styles.image} src={"/noavatar.png"} alt={"profile"} width={50} height={50} />
+                {/*<img className={styles.image} alt="profile"/>*/}
             </div>
         </div>
     )
