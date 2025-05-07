@@ -1,12 +1,13 @@
 .container{
     padding: 20px;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
-    gap: 10px;
-    margin: 5px 0px;
-    border-radius: 10px;
+    gap: 7px;
+    /*margin: 5px 0px;*/
+    /*border-radius: 10px;*/
     width: 125px;
+    height: 50px;
 }
 
 .container svg{

@@ -1,4 +1,8 @@
-import { MdOutlineThumbUpAlt } from "react-icons/md";
+import {
+    MdOutlineThumbUpAlt,
+    MdPeopleAlt,
+    MdBookmark,
+} from "react-icons/md";
 import styles from "./leftside.module.css"
 import SidebarLink from "./sidebarLink/sidebarLink";
 import Image from "next/image";
@@ -12,42 +16,42 @@ const leftbar = [
     {
         title: "Friend",
         path: "/friend",
-
+        icon: <MdPeopleAlt />,
     },
     {
         title: "Saved",
         path: "/saved",
+        icon:<MdBookmark />,
     },
 ];
 
 export default function LeftSide(){
     return(
-        <div className={styles.container}>
+        <aside className={styles.container}>
             {/*profile*/}
-            <div className={styles.user}>
+            <section className={styles.user}>
                 {/*background-profile*/}
-                <div className={styles.bg_profile}>
+                <figure className={styles.bg_profile}>
                     <Image className={styles.bg_user} src={"/background.jpg"} alt={"background"} width={260} height={65} />
                     {/*<Image src{"/background.jpg"} alt="background"/>*/}
-                </div>
+                </figure>
                 {/*profile-image*/}
-                <div className={styles.profile}>
+                <figure className={styles.profile}>
                     <Image className={styles.userImage} src={"/noavatar.png"} alt={"profile"} width={50} height={50} />
                     {/*<Image src={"/noavatar.png"} alt=""/>*/}
-                </div>
-
+                </figure>
                 {/*text*/}
                 <div className={styles.p_text}>
                     <h3>John</h3>
                     <h5>This a Bio</h5>
                 </div>
-            </div>
+            </section>
             {/*menu*/}
-            <div className={styles.menu}>
+            <nav className={styles.menu}>
                 {leftbar.map((item) =>(
                     <SidebarLink item={item} key={item.title}/>
                 ))}
-            </div>
-        </div>
-    )
+            </nav>
+        </aside>
+    );
 }
