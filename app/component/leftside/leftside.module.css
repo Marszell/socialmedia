@@ -3,8 +3,9 @@
     /*top: 30px;*/
     display: flex;
     flex-direction: column;
-    margin: 10px 0 0 80px;
+    /*margin: 10px 0 0 80px;*/
     gap: 15px;
+    width: 262px;
     /*flex-direction: row;*/
     /*justify-content: space-between;*/
     /*background-color: #211f1f;*/

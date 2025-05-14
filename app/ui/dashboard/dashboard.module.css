@@ -1,0 +1,11 @@
+.content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 15px;
+    gap: 15px;
+}
+
+.leftside {
+    margin: 10px 0 0 80px;
+    width: 262px;
+}
