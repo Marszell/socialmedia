@@ -31,12 +31,12 @@ const menu: MenuSection[] = [
         type: "sponsor",
         list: [
             {
-                image: "/leetcode.jpeg",
-                desc: "Go improve your skill with Leetcode",
+                image: "/hackerrank-logo.jpg",
+                desc: "Go improve your skill with hacker-rank",
             },
             {
                 image: "/profile.png",
-                desc: "This web was created by me",
+                desc: "This web was created by Marcel",
             },
         ]
     },
@@ -56,29 +56,12 @@ const menu: MenuSection[] = [
                 image: "/noavatar.png",
                 name: "Jojo"
             },
-            // {Friend}, {Friend}, {Friend},
         ],
     },
 ];
 
 export default function RightSide (){
     return (
-        // <div className={styles.container}>
-        //     {/*sponsor*/}
-        //     <div className={styles.sponsor}>
-        //         {/*<Image/>*/}
-        //         {/*<p></p>*/}
-        //     </div>
-        //
-        //     {/*friend*/}
-        //     <div className={styles.friend}>
-        //         {/*<Friend />*/}
-        //         {/*<Friend />*/}
-        //         {/*<Friend />*/}
-        //     </div>
-        // </div>
-
-        // test
         <div className={styles.container}>
             {menu.map((section) => (
                 <div key={section.title} className={styles.section}>

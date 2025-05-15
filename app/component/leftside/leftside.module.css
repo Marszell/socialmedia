@@ -31,9 +31,10 @@
 
 .user{
     border: 1px solid #2e374a;
-    width: 262px;
+    /*width: 262px;*/
     height: 200px;
     border-radius: 5px;
+    position: relative;
     /*display: block;*/
     /*top: 10px;*/
     /*margin: 10px 0;*/
@@ -47,8 +48,8 @@
 
 .profile{
     position: absolute;
-    top: 145px;
-    left: 105px;
+    top: 35px;
+    left: 25px;
 }
 
 .bg_profile{

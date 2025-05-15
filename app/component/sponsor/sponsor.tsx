@@ -11,7 +11,7 @@ export default function Sponsor ({ item } : { item: Props }){
         <div className={styles.container}>
             {/*Image*/}
             <div className={styles.img}>
-                <Image className={styles.image} src={item.image} alt={"Image"} width={100} height={120} />
+                <Image className={styles.image} src={item.image} alt={"Image"} width={110} height={110} />
             </div>
 
             {/*text*/}
