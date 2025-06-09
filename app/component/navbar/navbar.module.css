@@ -38,6 +38,7 @@
 .menu{
     display: flex;
     flex-direction: row;
+    margin-right: 230px;
     gap: 10px;
 }
 
